@@ -1,6 +1,8 @@
+@import "../../../style/variables.scss";
+
 .nav-bar {
     width: 100%;
-    height: 100px;
+    height: $header-height;
     background-color: #2779a7;
     display: flex;
     justify-content: space-between;
