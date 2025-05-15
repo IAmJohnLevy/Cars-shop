@@ -1,0 +1,13 @@
+@import "variables";
+
+main {
+  width: 100%;
+  min-height: 100%;
+}
+
+header {
+  display: flex;
+  height: $header-height;
+  background-color: $header-bg;
+  
+}

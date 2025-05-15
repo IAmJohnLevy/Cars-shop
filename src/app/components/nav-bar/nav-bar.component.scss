@@ -1,0 +1,28 @@
+@import "../../../style/variables.scss";
+
+.nav-bar {
+    width: 100%;
+    height: $header-height;
+    background-color: #2779a7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 3rem;
+    padding-left: 70%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+}
+
+a:active {
+    color: white;
+}
+
+a::placeholder {
+    color: whitesmoke;
+}
