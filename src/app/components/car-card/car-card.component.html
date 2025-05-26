@@ -1,0 +1,21 @@
+<div class="car-card" (click)="onCardClicked()">
+  <div class="img-cont">
+    <img width="100%" alt="Car Photo" [src]="car.imgUrl" />
+    <div class="bar"></div>
+  </div>
+
+  <div class="card-name-cont">
+    <p>new year</p>
+    <p>name</p>
+    <p>{{ car.description }}</p>
+  </div>
+  <div class="price-cont">
+    <h2>price</h2>
+    <h2>cost value</h2>
+  </div>
+  <div>
+    <button>Confirm Availability</button>
+    <button>Value Your Trade</button>
+    <button>Pre-Qualify Instantly</button>
+  </div>
+</div>

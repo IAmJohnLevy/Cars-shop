@@ -1,22 +1,21 @@
-
 export interface Icar {
+  id: number;
+  trueCard?: boolean;
+  name: string;
+  description: string;
+  exterior: string;
+  interior: string;
+  engine: string;
+  drivetrain: string;
+  transmission: string;
+  duelEfficiency: string;
+  keyFeatures: string[];
 
-    id: number,
-    trueCard?: boolean,
-    name: string,
-    description: string,
-    exterior: string,
-    interior: string,
-    engine: string,
-    drivetrain: string,
-    transmission: string,
-    duelEfficiency: string,
-    keyFeatures: string[],
+  longDescription: string;
+  imgUrl: string;
 
-    longDescription:string,
-    imgUrl: string,
-
-    premiumOptionsAndPackages: string[],
-    bodystyle: string,
-    counts: number
+  premiumOptionsAndPackages: string[];
+  bodystyle: string;
+  price: number;
+  counts: number;
 }

@@ -11,4 +11,8 @@ import { PageName } from '../../enums/page-name';
 export class NavBarComponent {
   pageLink = PageLink;
   pageName = PageName;
+
+  navLinkClicked(link:string) {
+    console.log(`clicked! ${link}`);
+  }
 }
