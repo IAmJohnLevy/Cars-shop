@@ -19,5 +19,6 @@ export class CarCardComponent {
   onCardClicked() {
     console.log("card component - button clicked...");
     this.carSelected.emit(this.car);
+    
   }
 }

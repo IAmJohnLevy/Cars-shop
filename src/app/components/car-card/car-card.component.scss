@@ -20,6 +20,11 @@ p {
   margin-bottom: 15px;
 }
 
+.price-cont {
+  display: flex;
+  justify-content: space-between;
+}
+
 button {
   background-color: #3498db;
   color: #ffffff;

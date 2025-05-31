@@ -5,13 +5,14 @@
   </div>
 
   <div class="card-name-cont">
-    <p>new year</p>
-    <p>name</p>
-    <p>{{ car.description }}</p>
+    <p>{{ car.description.substr(0, 8) }}</p>
+    <p>{{ car.description.substr(8) }}</p>
   </div>
   <div class="price-cont">
     <h2>price</h2>
-    <h2>cost value</h2>
+    <h2>
+      {{`$ ` + car.price.toString().substr(0, 2) + `,` + car.price.toFixed(3).substr(3)}}
+    </h2>
   </div>
   <div>
     <button>Confirm Availability</button>
