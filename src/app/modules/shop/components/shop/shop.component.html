@@ -9,7 +9,7 @@
     <app-filter-panel></app-filter-panel>
 </div>
 <div class="cards">
-  @for (car of allCars; track car.id) {
+  @for (car of filteredCars; track car.id) {
   <app-car-card (carSelected)="onCarSelected($event)" [car]="car" />
   }
   @empty {

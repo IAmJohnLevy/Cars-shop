@@ -1,5 +1,13 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, signal, computed} from '@angular/core';
+import { FilterDataService } from '../../../../services/filter-data.service';
 
+
+
+export interface Filter {
+  name: string;
+  need: boolean;
+  subfilters?: Filter[];
+}
 
 @Component({
   selector: 'app-filter-panel',
@@ -12,4 +20,29 @@ export class FilterPanelComponent {
   if () {
     
   }
+
+  //new
+
+  constructor(private filterDataService: FilterDataService) { }
+
+  isFilterEnabled: boolean = false;
+  isFilterDisabled: boolean = false;
+  isFilter1Enabled: boolean = false;
+  isFilter2Enabled: boolean = false;
+
+  onFilterToggle() {
+    this.filterDataService.setFilterEnabled(this.isFilterEnabled);
+  }
+
+  onFilter1Change() {
+    this.filterDataService.setFilter1Enabled(this.isFilter1Enabled);
+  }
+
+  onFilter2Change() {
+    this.filterDataService.setFilter2Enabled(this.isFilter2Enabled);
+  }
 }
+
+// ngOnDestroy
+// методы отписки
+// дестрой реф

@@ -1,1 +1,6 @@
-<mat-checkbox>Filter</mat-checkbox>
+<mat-checkbox  [(ngModel)]="isFilterEnabled" (change)="onFilterToggle()">Enable Filters</mat-checkbox>
+
+<div *ngIf="isFilterEnabled">
+  <mat-checkbox [(ngModel)]="isFilter1Enabled" (change)="onFilter1Change()">bodystyle: SUV</mat-checkbox>
+  <mat-checkbox [(ngModel)]="isFilter2Enabled" (change)="onFilter2Change()">2D Chassis</mat-checkbox>
+</div>
