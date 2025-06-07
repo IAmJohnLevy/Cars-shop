@@ -1,13 +1,53 @@
-@import "variables";
+@import "../style/variables.scss";
 
 main {
   width: 100%;
+  position: relative;
   min-height: 100%;
+  background-color: #ecf0f1;
+  padding: 1%;
 }
 
 header {
   display: flex;
+  position: relative;
+  height: $header-height;
+  background-color: #ecf0f1;
+  z-index: 999;
+}
+
+.h1-label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #2c3e50;
+  line-height: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  display: block;
+  position: relative;
   height: $header-height;
   background-color: $header-bg;
-  
+  z-index: 999;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px 0;
 }

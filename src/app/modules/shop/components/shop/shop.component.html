@@ -1,1 +1,18 @@
-<p>shop works!</p>
+<div class="shop-header">
+  <h2>New Vehicles for Sale Online</h2>
+  <div class="input">
+    <input type="text" />
+    <p>Find</p>
+  </div>
+</div>
+<div class="checkboxes">
+    <app-filter-panel></app-filter-panel>
+</div>
+<div class="cards">
+  @for (car of filteredCars; track car.id) {
+  <app-car-card (carSelected)="onCarSelected($event)" [car]="car" />
+  }
+  @empty {
+    <p>No elemets found with this filter</p>
+  }
+</div>

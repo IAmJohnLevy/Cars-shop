@@ -7,6 +7,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { ShopModule } from './modules/shop/shop.module';
 import { BasketModule } from './modules/basket/basket.module';
+import { CarCardComponent } from './components/car-card/car-card.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +19,10 @@ import { BasketModule } from './modules/basket/basket.module';
     BrowserModule,
     AppRoutingModule,
     ShopModule,
-    BasketModule
+    BasketModule,
+    CarCardComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

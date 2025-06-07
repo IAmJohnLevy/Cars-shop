@@ -1,0 +1,9 @@
+@use '@angular/material' as mat;
+
+// Customize the entire app. Change :root to your selector if you want to scope the styles.
+.mat-checkbox {
+  @include mat.checkbox-overrides((
+    disabled-label-color: orange,
+    label-text-color: red,
+  ));
+}

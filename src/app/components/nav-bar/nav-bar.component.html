@@ -1,5 +1,5 @@
 <div class="nav-bar">
-  <a [routerLink]="pageLink.MainPage">{{pageName.MainPage}}</a>
-  <a [routerLink]="pageLink.Shop">{{pageName.Shop}}</a>
-  <a [routerLink]="pageLink.Basket">{{pageName.Basket}}</a>
+  <a [routerLink]="pageLink.MainPage" (click)="navLinkClicked(pageName.MainPage)">{{pageName.MainPage}}</a>
+  <a [routerLink]="pageLink.Shop" (click)="navLinkClicked(pageName.Shop)">{{pageName.Shop}}</a>
+  <a [routerLink]="pageLink.Basket" (click)="navLinkClicked(pageName.Basket)">{{pageName.Basket}}</a>
 </div>

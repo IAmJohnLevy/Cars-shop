@@ -1,28 +1,28 @@
 @import "../../../style/variables.scss";
 
 .nav-bar {
-    width: 100%;
+    width: 90vw;
     height: $header-height;
-    background-color: #2779a7;
+    background-color: #ecf0f1;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     gap: 2rem;
     padding-right: 3rem;
-    padding-left: 70%;
+    font-family: "Ancizar Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 a {
     display: block;
     text-decoration: none;
-    color: #000;
+    color: #2c3e50;
     font-size: 2rem;
 }
 
 a:active {
     color: white;
-}
-
-a::placeholder {
-    color: whitesmoke;
 }
