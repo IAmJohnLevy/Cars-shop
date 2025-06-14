@@ -71,16 +71,25 @@ input {
   right: 1%;
 }
 
-.input-container i {
+.input-container button {
   position: absolute;
   right: 10px;
-  top: 50%;
+  top: 55%;
   transform: translateY(-50%);
-  color: #757575;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-
+.input-container img {
+  width: 20px;
+  height: 20px;
+  opacity: 50%;
+  &:hover {
+    transform:scale(115%);
+  }
+}
 
 .filter-checkboxes {
-  padding: 2%;
+  padding: 0 2%;
 }

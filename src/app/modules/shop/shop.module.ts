@@ -7,6 +7,7 @@ import { MatCheckboxModule } from "@angular/material/checkbox";
 import { FormsModule } from "@angular/forms";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
+import { MatButtonToggleModule } from "@angular/material/button-toggle";
 
 @NgModule({
   declarations: [FilterPanelComponent, ShopComponent],
@@ -17,6 +18,7 @@ import { MatDividerModule } from "@angular/material/divider";
     FormsModule,
     MatButtonModule,
     MatDividerModule,
+    MatButtonToggleModule
   ],
   exports: [ShopComponent, FilterPanelComponent],
 })

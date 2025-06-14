@@ -8,6 +8,7 @@ import { MainPageComponent } from "./components/main-page/main-page.component";
 import { ShopModule } from "./modules/shop/shop.module";
 import { BasketModule } from "./modules/basket/basket.module";
 import { CarCardComponent } from "./components/car-card/car-card.component";
+
 @NgModule({
   declarations: [AppComponent, NavBarComponent, MainPageComponent],
   imports: [
@@ -16,7 +17,7 @@ import { CarCardComponent } from "./components/car-card/car-card.component";
     ShopModule,
     BasketModule,
     CarCardComponent
-  ],
+    ],
   providers: [],
   bootstrap: [AppComponent],
 })
