@@ -25,24 +25,23 @@ export class FilterPanelComponent {
 
   constructor(private filterDataService: FilterDataService) { }
 
-  isFilterEnabled: boolean = false;
+  isAllFilterEnabled: boolean = false;
   isFilterDisabled: boolean = false;
   isFilter1Enabled: boolean = false;
   isFilter2Enabled: boolean = false;
 
   onFilterToggle() {
-    this.filterDataService.setFilterEnabled(this.isFilterEnabled);
+    this.filterDataService.setFilterEnabled(this.isAllFilterEnabled);
   }
 
   onFilter1Change() {
     this.filterDataService.setFilter1Enabled(this.isFilter1Enabled);
+    // this.isFilter2Enabled = false; // not work as axpected
   }
 
   onFilter2Change() {
     this.filterDataService.setFilter2Enabled(this.isFilter2Enabled);
+    // this.isFilter1Enabled = false; // not work as axpected
   }
 }
 
-// ngOnDestroy
-// методы отписки
-// дестрой реф

@@ -1,6 +1,8 @@
 import { Component, Input } from "@angular/core";
 import { Icar } from "../../../../model/car";
 import { FilterDataService } from "../../../../services/filter-data.service";
+import { Subscription } from 'rxjs';
+
 
 @Component({
   selector: "app-shop",
@@ -19,10 +21,17 @@ export class ShopComponent {
   //new
     
   filteredCars: Icar[] = [];
+  private subscription!: Subscription;
 
   ngOnInit() {
-    this.filterDataService.getFilteredCars().subscribe(cars => {
+    this.subscription = this.filterDataService.getFilteredCars().subscribe(cars => {
       this.filteredCars = cars;
     });
+  }
+
+  ngOnDestroy() {
+    if (this.subscription) {
+      this.subscription.unsubscribe();
+    }
   }
 }
