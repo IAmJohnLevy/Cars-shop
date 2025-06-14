@@ -10,26 +10,77 @@
 }
 
 h2 {
+  color: #2c3e50;
   font-family: "Ancizar Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  line-height: 2;
 }
 
 .shop-header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-.input {
-  display: flex;
-  position: absolute;
-  right: 0;
+.mat-divider {
+  height: 1px;
+  width: 90%;
+  color: #2c3e50;
+
 }
 
-.checkboxes {
-  height: 100px;
+.shop-header-text {
+  padding-top: 1%;
+  display: flex;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: #f8f8f8;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+  &:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+    background-color: #ffffff;
+  }
+
+  &:hover {
+    border-color: #8bc34a;
+  }
+
+  &::placeholder {
+    color: #aaa;
+  }
+}
+
+.input-container {
+  display: flex;
+  position: absolute;
+  right: 1%;
+}
+
+.input-container i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #757575;
+}
+
+
+
+.filter-checkboxes {
+  padding: 2%;
 }

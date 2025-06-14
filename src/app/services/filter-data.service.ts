@@ -9,48 +9,48 @@ import { BehaviorSubject, Observable, Subscription } from "rxjs";
 export class FilterDataService {
   allCars: Icar[] = ALL_CARS;
 
-  private filterEnabledSource = new BehaviorSubject<boolean>(false);
-  private filter1EnabledSource = new BehaviorSubject<boolean>(false);
-  private filter2EnabledSource = new BehaviorSubject<boolean>(false);
+  private filterBodystyleEnabledSource = new BehaviorSubject<boolean>(false);
+  private filterSUVEnabledSource = new BehaviorSubject<boolean>(false);
+  private filter2DEnabledSource = new BehaviorSubject<boolean>(false);
 
-  filterEnabled$ = this.filterEnabledSource.asObservable();
-  filter1Enabled$ = this.filter1EnabledSource.asObservable();
-  filter2Enabled$ = this.filter2EnabledSource.asObservable();
+  filterBodystyleEnabled$ = this.filterBodystyleEnabledSource.asObservable();
+  filterSUVEnabled$ = this.filterSUVEnabledSource.asObservable();
+  filter2DEnabled$ = this.filter2DEnabledSource.asObservable();
 
   constructor() {}
 
-  setFilterEnabled(value: boolean) {
-    this.filterEnabledSource.next(value);
+  setFilterBodystyleEnabled(value: boolean) {
+    this.filterBodystyleEnabledSource.next(value);
     if (!value) {
-      this.filter1EnabledSource.next(false);
-      this.filter2EnabledSource.next(false);
+      this.filterSUVEnabledSource.next(false);
+      this.filter2DEnabledSource.next(false);
     }
   }
 
-  setFilter1Enabled(value: boolean) {
-    this.filter1EnabledSource.next(value);
+  setFilterSUVEnabled(value: boolean) {
+    this.filterSUVEnabledSource.next(value);
   }
 
-  setFilter2Enabled(value: boolean) {
-    this.filter2EnabledSource.next(value);
+  setFilter2DEnabled(value: boolean) {
+    this.filter2DEnabledSource.next(value);
   }
 
   getFilteredCars(): Observable<Icar[]> {
     return new Observable<Icar[]>((subscriber) => {
-      let subscription: Subscription;
-      let subscription1: Subscription;
-      let subscription2: Subscription;
-      subscription = this.filterEnabled$.subscribe((filterEnabled) => {
-        subscription1 = this.filter1Enabled$.subscribe((filter1Enabled) => {
-          subscription2 = this.filter2Enabled$.subscribe((filter2Enabled) => {
+      let subscriptionBodystyle: Subscription;
+      let subscriptionSUV: Subscription;
+      let subscription2D: Subscription;
+      subscriptionBodystyle = this.filterBodystyleEnabled$.subscribe((filterBodystyleEnabled) => {
+        subscriptionSUV = this.filterSUVEnabled$.subscribe((filterSUVEnabled) => {
+          subscription2D = this.filter2DEnabled$.subscribe((filter2DEnabled) => {
             let filteredCars = [...this.allCars];
-            if (filterEnabled) {
-              if (filter1Enabled) {
+            if (filterBodystyleEnabled) {
+              if (filterSUVEnabled) {
                 filteredCars = filteredCars.filter(
                   (car) => car.bodystyle === "SUV"
                 );
               }
-              if (filter2Enabled) {
+              if (filter2DEnabled) {
                 filteredCars = filteredCars.filter(
                   (car) => car.bodystyle === "2D Chassis"
                 );
@@ -62,9 +62,9 @@ export class FilterDataService {
       });
 
       return () => {
-        subscription.unsubscribe();
-        subscription1.unsubscribe();
-        subscription2.unsubscribe();
+        subscriptionBodystyle.unsubscribe();
+        subscriptionSUV.unsubscribe();
+        subscription2D.unsubscribe();
       };
     });
   }

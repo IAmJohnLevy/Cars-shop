@@ -1,6 +1,20 @@
-<mat-checkbox  [(ngModel)]="isAllFilterEnabled" (change)="onFilterToggle()">Enable Filters</mat-checkbox>
+<button mat-button class="open-filters" (click)="openFiltersClick()">
+  Filters
+</button>
 
-<div *ngIf="isAllFilterEnabled">
-  <mat-checkbox [(ngModel)]="isFilter1Enabled" (change)="onFilter1Change()">bodystyle: SUV</mat-checkbox>
-  <mat-checkbox [(ngModel)]="isFilter2Enabled" (change)="onFilter2Change()">2D Chassis</mat-checkbox>
+<div>
+  <mat-checkbox [(ngModel)]="isFilterBodystyleEnabled" (change)="onFilterBodystyleToggle()"
+    >Bodystyle</mat-checkbox
+  >
+
+  <div *ngIf="isFilterBodystyleEnabled">
+    <mat-checkbox
+      [(ngModel)]="isFilterSUVEnabled"
+      (change)="onFilterSUVChange()"
+      >bodystyle: SUV</mat-checkbox
+    >
+    <mat-checkbox [(ngModel)]="isFilter2DEnabled" (change)="onFilter2DChange()"
+      >2D Chassis</mat-checkbox
+    >
+  </div>
 </div>

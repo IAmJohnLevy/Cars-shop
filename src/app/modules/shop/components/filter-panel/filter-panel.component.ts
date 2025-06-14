@@ -17,6 +17,10 @@ export interface Filter {
 })
 
 export class FilterPanelComponent {
+  
+  openFiltersClick() {
+
+  }
   if () {
     
   }
@@ -25,22 +29,21 @@ export class FilterPanelComponent {
 
   constructor(private filterDataService: FilterDataService) { }
 
-  isAllFilterEnabled: boolean = false;
-  isFilterDisabled: boolean = false;
-  isFilter1Enabled: boolean = false;
-  isFilter2Enabled: boolean = false;
+  isFilterBodystyleEnabled: boolean = false;
+  isFilterSUVEnabled: boolean = false;
+  isFilter2DEnabled: boolean = false;
 
-  onFilterToggle() {
-    this.filterDataService.setFilterEnabled(this.isAllFilterEnabled);
+  onFilterBodystyleToggle() {
+    this.filterDataService.setFilterBodystyleEnabled(this.isFilterBodystyleEnabled);
   }
 
-  onFilter1Change() {
-    this.filterDataService.setFilter1Enabled(this.isFilter1Enabled);
+  onFilterSUVChange() {
+    this.filterDataService.setFilterSUVEnabled(this.isFilterSUVEnabled);
     // this.isFilter2Enabled = false; // not work as axpected
   }
 
-  onFilter2Change() {
-    this.filterDataService.setFilter2Enabled(this.isFilter2Enabled);
+  onFilter2DChange() {
+    this.filterDataService.setFilter2DEnabled(this.isFilter2DEnabled);
     // this.isFilter1Enabled = false; // not work as axpected
   }
 }
