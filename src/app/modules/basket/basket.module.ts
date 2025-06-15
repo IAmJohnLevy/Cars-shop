@@ -1,18 +1,20 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { BasketComponent } from './components/basket/basket.component';
-
-
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { BasketComponent } from "./components/basket/basket.component";
+import { MatIconModule } from "@angular/material/icon";
+import { MatButtonModule } from "@angular/material/button";
+import { MatBadgeModule } from "@angular/material/badge";
+import { MatDividerModule } from "@angular/material/divider";
 
 @NgModule({
-  declarations: [
-    BasketComponent
-  ],
+  declarations: [BasketComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    MatDividerModule,
+    MatBadgeModule,
+    MatButtonModule,
+    MatIconModule,
   ],
-  exports: [
-    BasketComponent
-  ]
+  exports: [BasketComponent],
 })
-export class BasketModule { }
+export class BasketModule {}

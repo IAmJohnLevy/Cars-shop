@@ -1,5 +1,10 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatButtonModule } from "@angular/material/button";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatIconModule } from "@angular/material/icon";
+import { MatBadgeModule } from "@angular/material/badge";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -13,11 +18,16 @@ import { CarCardComponent } from "./components/car-card/car-card.component";
   declarations: [AppComponent, NavBarComponent, MainPageComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatBadgeModule,
     AppRoutingModule,
     ShopModule,
     BasketModule,
-    CarCardComponent
-    ],
+    CarCardComponent,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
