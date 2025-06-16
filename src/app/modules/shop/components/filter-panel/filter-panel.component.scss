@@ -1,9 +1,11 @@
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
 
 .filters {
-  position: absolute;
-  top: 50vh;
-  left: 50vw;
+  // position: absolute;
+  // top: 50vh;
+  // left: 50vw;
+
+  border: solid 1px blue;
 }
 
 mat-button-toggle-group {

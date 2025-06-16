@@ -14,12 +14,19 @@ export interface Filter {
   styleUrl: "./filter-panel.component.scss",
 })
 export class FilterPanelComponent {
-  filtersOn: boolean = false;
+  filterToggleValue: string = '';
+  filtersOn: boolean = true;
 
-  openFiltersClick() {}
-  if() {}
-
-  //new
+  onFilterToggleChange(event: any) {
+    const value = event.value;
+    if (value === 'useFilters') {
+      this.filtersOn = true;
+      console.log('Use filters is selected');
+    } else if (value === 'disableFilters') {
+      this.filtersOn = false;
+      console.log('Disable filters is selected');
+    }
+  }
 
   constructor(private filterDataService: FilterDataService) {}
 

@@ -1,7 +1,17 @@
-<mat-button-toggle-group class="button-toggle-group" name="use-Filters" aria-label="Use Filtters">
-  <mat-button-toggle class="button-toggle filterOn" value="useFilters">Use filters</mat-button-toggle>
-  <mat-button-toggle class="button-toggle filterOff" value="disableFilters">Disable filters</mat-button-toggle>
-</mat-button-toggle-group>
+<mat-button-toggle-group
+      class="button-toggle-group"
+      name="use-Filters"
+      aria-label="Use Filters"
+      [(value)]="filterToggleValue"
+      (change)="onFilterToggleChange($event)"
+    >
+      <mat-button-toggle class="button-toggle filterOn" value="useFilters"
+        >Use filters</mat-button-toggle
+      >
+      <mat-button-toggle class="button-toggle filterOff" value="disableFilters"
+        >Disable filters</mat-button-toggle
+      >
+    </mat-button-toggle-group>
 
 <div class="filters" *ngIf="filtersOn">
   <mat-checkbox
