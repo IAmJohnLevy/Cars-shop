@@ -1,17 +1,17 @@
 <mat-button-toggle-group
-      class="button-toggle-group"
-      name="use-Filters"
-      aria-label="Use Filters"
-      [(value)]="filterToggleValue"
-      (change)="onFilterToggleChange($event)"
-    >
-      <mat-button-toggle class="button-toggle filterOn" value="useFilters"
-        >Use filters</mat-button-toggle
-      >
-      <mat-button-toggle class="button-toggle filterOff" value="disableFilters"
-        >Disable filters</mat-button-toggle
-      >
-    </mat-button-toggle-group>
+  class="button-toggle-group"
+  name="use-Filters"
+  aria-label="Use Filters"
+  [(value)]="filterToggleValue"
+  (change)="onFilterToggleChange($event)"
+>
+  <mat-button-toggle class="button-toggle filterOn" value="useFilters"
+    >Use filters</mat-button-toggle
+  >
+  <mat-button-toggle class="button-toggle filterOff" value="disableFilters"
+    >Disable filters</mat-button-toggle
+  >
+</mat-button-toggle-group>
 
 <div class="filters" *ngIf="filtersOn">
   <mat-checkbox
@@ -26,7 +26,9 @@
       (change)="onFilterSUVChange()"
       >bodystyle: SUV</mat-checkbox
     >
-    <mat-checkbox [(ngModel)]="isFilter2DEnabled" (change)="onFilter2DChange()"
+    <mat-checkbox
+      [(ngModel)]="isFilter2DEnabled"
+      (change)="onFilter2DChange()"
       >2D Chassis</mat-checkbox
     >
   </div>

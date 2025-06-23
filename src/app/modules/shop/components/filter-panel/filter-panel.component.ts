@@ -15,7 +15,7 @@ export interface Filter {
 })
 export class FilterPanelComponent {
   filterToggleValue: string = '';
-  filtersOn: boolean = true;
+  filtersOn: boolean = false;
 
   onFilterToggleChange(event: any) {
     const value = event.value;
@@ -24,6 +24,13 @@ export class FilterPanelComponent {
       console.log('Use filters is selected');
     } else if (value === 'disableFilters') {
       this.filtersOn = false;
+      // new
+      this.isFilterBodystyleEnabled = false;
+      this.isFilterSUVEnabled = false;
+      this.isFilter2DEnabled = false;
+      this.filterDataService.setFilterBodystyleEnabled(false);
+      this.filterDataService.setFilterSUVEnabled(false);
+      this.filterDataService.setFilter2DEnabled(false);
       console.log('Disable filters is selected');
     }
   }
