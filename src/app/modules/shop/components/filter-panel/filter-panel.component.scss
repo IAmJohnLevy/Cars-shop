@@ -1,18 +1,30 @@
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
 
 .filters {
-  // position: absolute;
-  // top: 50vh;
-  // left: 50vw;
-
   height: 200px;
+  width: 310px;
+  padding: 5px;
 
-  border: solid 1px blue;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.filter-div {
+  width: 100px;
+  height: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 50px ; 
+  gap: 10px;
+}
+
+.price {
+  width: 100%;
 }
 
 mat-button-toggle-group {
-  display: flex;
-  flex-wrap: wrap;
   border-radius: 10px;
   height: 50px;
 }
@@ -31,4 +43,5 @@ mat-button-toggle {
 
 :host {
   display: flex;
+  flex-direction: column;
 }

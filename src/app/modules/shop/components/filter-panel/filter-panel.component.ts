@@ -24,7 +24,6 @@ export class FilterPanelComponent {
       console.log('Use filters is selected');
     } else if (value === 'disableFilters') {
       this.filtersOn = false;
-      // new
       this.isFilterBodystyleEnabled = false;
       this.isFilterSUVEnabled = false;
       this.isFilter2DEnabled = false;

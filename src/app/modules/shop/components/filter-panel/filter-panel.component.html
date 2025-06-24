@@ -1,19 +1,31 @@
-<mat-button-toggle-group
-  class="button-toggle-group"
-  name="use-Filters"
-  aria-label="Use Filters"
-  [(value)]="filterToggleValue"
-  (change)="onFilterToggleChange($event)"
->
-  <mat-button-toggle class="button-toggle filterOn" value="useFilters"
-    >Use filters</mat-button-toggle
+<div class="button-toggle-group-container">
+  <mat-button-toggle-group
+    class="button-toggle-group"
+    name="use-Filters"
+    aria-label="Use Filters"
+    [(value)]="filterToggleValue"
+    (change)="onFilterToggleChange($event)"
   >
-  <mat-button-toggle class="button-toggle filterOff" value="disableFilters"
-    >Disable filters</mat-button-toggle
-  >
-</mat-button-toggle-group>
+    <mat-button-toggle class="button-toggle filterOn" value="useFilters"
+      >Use filters</mat-button-toggle
+    >
+    <mat-button-toggle class="button-toggle filterOff" value="disableFilters"
+      >Disable filters</mat-button-toggle
+    >
+  </mat-button-toggle-group>
+</div>
 
 <div class="filters" *ngIf="filtersOn">
+  <div class="filter-div price"><p>PRICE</p></div>
+  <div class="filter-div"><p>Year</p></div>
+  <div class="filter-div"><p>Make</p></div>
+  <div class="filter-div"><p>Model</p></div>
+  <div class="filter-div"><p>Engine</p></div>
+  <div class="filter-div"><p>Color</p></div>
+  <div class="filter-div"><p>Trim</p></div>
+  <div class="filter-div"><p>Transmission</p></div>
+  <div class="filter-div"><p>Features</p></div>
+
   <mat-checkbox
     [(ngModel)]="isFilterBodystyleEnabled"
     (change)="onFilterBodystyleToggle()"
@@ -26,9 +38,7 @@
       (change)="onFilterSUVChange()"
       >bodystyle: SUV</mat-checkbox
     >
-    <mat-checkbox
-      [(ngModel)]="isFilter2DEnabled"
-      (change)="onFilter2DChange()"
+    <mat-checkbox [(ngModel)]="isFilter2DEnabled" (change)="onFilter2DChange()"
       >2D Chassis</mat-checkbox
     >
   </div>

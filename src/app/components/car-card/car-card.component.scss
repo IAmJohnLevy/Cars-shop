@@ -1,20 +1,19 @@
 .car-card {
-    border: 1px solid white;
-    width: 300px;
-    background-color: #ffffff;
+  border: 1px solid white;
+  width: 300px;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 20px;
 }
 
 h2 {
-    color: #2c3e50;
+  color: #2c3e50;
   font-size: 1.5em;
   margin-bottom: 10px;
 }
 p {
-    color: #7f8c8d;
+  color: #7f8c8d;
   font-size: 1em;
   line-height: 1.6;
   margin-bottom: 15px;
@@ -40,6 +39,3 @@ button {
 button:hover {
   background-color: #2980b9;
 }
-
-
-
