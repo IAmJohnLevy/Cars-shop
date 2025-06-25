@@ -1,5 +1,5 @@
 <div class="shop-header">
-  <mat-divider></mat-divider>
+  <mat-divider class="header-devider"></mat-divider>
   <div class="shop-header-text">
     <h2>New Vehicles for Sale Online</h2>
     <div class="input-container">
@@ -17,7 +17,7 @@
   <div class="filter-boxes">
     <app-filter-panel></app-filter-panel>
   </div>
-  <mat-divider [vertical]="true" role="separator"></mat-divider>
+  <mat-divider class="vertical-divider" [vertical]="true" role="separator"></mat-divider>
   <div class="cards">
     @for (car of filteredCars; track car.id) {
     <app-car-card (carSelected)="onCarSelected($event)" [car]="car" />

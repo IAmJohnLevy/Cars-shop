@@ -4,8 +4,9 @@
 
 .cards {
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+  // grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
   gap: 10px;
   flex-grow: 1; 
 }
@@ -28,9 +29,9 @@ h2 {
   position: relative;
 }
 
-.mat-divider {
+.header-devider {
   height: 1px;
-  // width: 90%;
+  width: 90%;
   color: #2c3e50;
 }
 
@@ -91,10 +92,16 @@ input {
   }
 }
 
-.filter-boxes {
-  padding: 0 2%;
+// .filter-boxes {
+//   padding: 0 2%;
+// }
+
+.mat-divider.mat-divider-vertical {
+  
+  margin: 0 5px;
 }
 
 .shop-main {
   display: flex;
+  padding: 0 5px;
 }
