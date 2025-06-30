@@ -9,6 +9,9 @@ import { BehaviorSubject, Observable, Subscription } from "rxjs";
 export class FilterDataService {
   allCars: Icar[] = ALL_CARS;
 
+  public searchStringValue: string = '';
+
+
   private filterBodystyleEnabledSource = new BehaviorSubject<boolean>(false);
   private filterSUVEnabledSource = new BehaviorSubject<boolean>(false);
   private filter2DEnabledSource = new BehaviorSubject<boolean>(false);
@@ -55,6 +58,11 @@ export class FilterDataService {
                   (car) => car.bodystyle === "2D Chassis"
                 );
               }
+            }
+            if (this.searchStringValue) {
+              filteredCars = filteredCars.filter(
+                  (car) => car.description.includes(this.searchStringValue)
+                );
             }
             subscriber.next(filteredCars);
           });

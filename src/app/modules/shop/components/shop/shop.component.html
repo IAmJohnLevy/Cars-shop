@@ -3,7 +3,7 @@
   <div class="shop-header-text">
     <h2>New Vehicles for Sale Online</h2>
     <div class="input-container">
-      <input type="text" placeholder="Search..." />
+      <input type="text" [(ngModel)]="searchStringValue" (change)="onInputChange()" placeholder="Search..." />
       <button class="Search">
         <img
           src="../../../../../assets/img/svg/icons8-поиск.svg"
@@ -17,12 +17,18 @@
   <div class="filter-boxes">
     <app-filter-panel></app-filter-panel>
   </div>
-  <mat-divider class="vertical-divider" [vertical]="true" role="separator"></mat-divider>
-  <div class="cards">
-    @for (car of filteredCars; track car.id) {
-    <app-car-card (carSelected)="onCarSelected($event)" [car]="car" />
-    } @empty {
-    <p>No elemets found with this filter</p>
-    }
+  <mat-divider
+    class="vertical-divider"
+    [vertical]="true"
+    role="separator"
+  ></mat-divider>
+  <div class="card-container">
+    <div class="cards">
+      @for (car of filteredCars; track car.id) {
+      <app-car-card (carSelected)="onCarSelected($event)" [car]="car" />
+      } @empty {
+      <p>No elemets found with this filter</p>
+      }
+    </div>
   </div>
 </div>

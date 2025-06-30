@@ -12,13 +12,13 @@ import { Subscription } from 'rxjs';
 })
 export class ShopComponent {
 
+  searchStringValue: string = '';
+
   constructor(private filterDataService: FilterDataService) {}
 
   onCarSelected(car: Icar) {
     console.log("App component - click event bubbled...", car);
   }
-
-  //new
     
   filteredCars: Icar[] = [];
   private subscription!: Subscription;
@@ -30,6 +30,17 @@ export class ShopComponent {
   }
 
   ngOnDestroy() {
+    if (this.subscription) {
+      this.subscription.unsubscribe();
+    }
+  }
+
+  onInputChange() {
+    this.filterDataService.searchStringValue = this.searchStringValue;
+    console.log('Значение сохранено в сервисе:', this.filterDataService.searchStringValue);
+    this.subscription = this.filterDataService.getFilteredCars().subscribe(cars => {
+      this.filteredCars = cars;
+    });
     if (this.subscription) {
       this.subscription.unsubscribe();
     }

@@ -1,5 +1,12 @@
 @use '@angular/material' as mat;
 
+// Customize the entire app. Change :root to your selector if you want to scope the styles.
+mat-icon {
+  @include mat.icon-overrides((
+    color: orange,
+  ));
+}
+
 // // Customize the entire app. Change :root to your selector if you want to scope the styles.
 // .demo-section {
 //   @include mat.badge-overrides((
