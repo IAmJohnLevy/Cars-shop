@@ -1,1 +1,37 @@
-<p>basket works!</p>
+<div class="basket-header">
+  <mat-divider></mat-divider>
+  <div class="basket-header-text">
+    <h2>YOUR СHOSEN CARS</h2>
+    <div class="input-container">
+      <input type="text" placeholder="Search..." />
+      <button class="Search">
+        <img
+          src="../../../../../assets/img/svg/icons8-поиск.svg"
+          alt="Search"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+<div class="card-container">
+  <!-- <button (click)="demo()">DEMO chosenCars</button> -->
+  <div class="cards">
+    @for (car of chosenCars; track car.id) {
+    <app-car-card [context]="CardContext.Basket" [car]="car" />
+    } @empty {
+    <p>No cars in basket</p>
+    }
+  </div>
+</div>
+<div class="total-and-confirm-container" *ngIf="totalValues.countCars !== 0">
+  <div class="total">
+    <p>{{`Total cars in basket: ${totalValues.countCars}`}}</p>
+    <p>{{`Total cost cars in basket: ${totalValues.price |  currency:'USD':'symbol':'1.0'}`}}</p>
+  </div>
+  <div class="result-buttons">
+    <button class="clear-button" (click)="clearBasket()">Clear basket</button>
+    <a [href]="hrefGenerate()" target="_blank">
+      <button class="confirm-button" (click)="confirmToBuy()">Confirm to buy</button>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="car-card">
+  <div class="car-card-info">
+    <div class="img-cont">
+      <img width="100%" alt="Car Photo" [src]="car.imgUrl" />
+      <div class="bar"></div>
+    </div>
+
+    <div class="card-name-cont">
+      <p>{{ car.description.substr(0, 8) }}</p>
+      <p>{{ car.description.substr(8) }}</p>
+    </div>
+  </div>
+  <div class="car-card-footer">
+    <div class="price-cont">
+      <h2>price</h2>
+      <h2>
+        {{`$ ` + car.price.toString().substr(0, 2) + ` ` + car.price.toFixed(0).substr(2)}}
+      </h2>
+    </div>
+    <div class="card-button-container">
+      <button (click)="goToDetails(car.id)">See more</button>
+      <!-- <ng-content *ngIf="isShopContext; else deleteButton">
+        <button class="confirm-btn" (click)="sendToBasket(car)">Want to buy</button>
+      </ng-content>
+      <ng-template #deleteButton>
+        <button class="delete-btn" (click)="deleteFromBasket(car)">Delete from basket</button>
+      </ng-template> -->
+
+      @if (isShopContext) {
+      <button class="confirm-btn" (click)="sendToBasket(car)">
+        {{carCardLabel.WantToBuy}}
+      </button>
+      } @else {
+      <button class="delete-btn" (click)="deleteFromBasket(car)">
+        {{carCardLabel.DeleteFromBasket}}
+      </button>
+      }
+    </div>
+  </div>
+</div>

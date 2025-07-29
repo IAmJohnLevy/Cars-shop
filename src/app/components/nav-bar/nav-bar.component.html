@@ -1,5 +1,20 @@
+<div class="h1-label">
+  <h1>CARS FOR<br />EVERYONE</h1>
+</div>
 <div class="nav-bar">
-  <a [routerLink]="pageLink.MainPage">{{pageName.MainPage}}</a>
-  <a [routerLink]="pageLink.Shop">{{pageName.Shop}}</a>
-  <a [routerLink]="pageLink.Basket">{{pageName.Basket}}</a>
+  <a
+    [routerLink]="pageLink.MainPage"
+    (click)="navLinkClicked(pageName.MainPage)"
+    >{{ pageName.MainPage }}</a
+  >
+  <a [routerLink]="pageLink.Shop">{{
+    pageName.Shop
+  }}</a>
+  <a [routerLink]="pageLink.Basket">
+    <!-- {{
+    pageName.Basket
+  }}  -->
+  <div class="matBadge">
+    <mat-icon [matBadge]="carsInBasket">shopping_cart</mat-icon>
+  </div></a>
 </div>

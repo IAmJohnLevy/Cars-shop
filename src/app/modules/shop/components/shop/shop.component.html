@@ -1,1 +1,34 @@
-<p>shop works!</p>
+<div class="shop-header">
+  <mat-divider class="header-devider"></mat-divider>
+  <div class="shop-header-text">
+    <h2>NEW VEHICLES FOR SALE ONLINE</h2>
+    <div class="input-container">
+      <input type="text" [(ngModel)]="searchValue" (change)="onSearchTermChange()" placeholder="Search..." />
+      <button class="Search">
+        <img
+          src="../../../../../assets/img/svg/icons8-поиск.svg"
+          alt="Search"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+<div class="shop-main">
+  <div class="filter-boxes">
+    <app-filter-panel></app-filter-panel>
+  </div>
+  <mat-divider
+    class="vertical-divider"
+    [vertical]="true"
+    role="separator"
+  ></mat-divider>
+  <div class="card-container">
+    <div class="cards">
+      @for (car of cars; track car.id) {
+      <app-car-card [context]="CardContext.Shop" (carSelected)="onCarSelected()" [car]="car" />
+      } @empty {
+      <p>No elemets found with this filter</p>
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,187 @@
+@use "@angular/material" as mat;
+
+// Customize the entire app. Change :root to your selector if you want to scope the styles.
+mat-icon {
+  @include mat.icon-overrides(
+    (
+      color: orange,
+    )
+  );
+}
+
+// // Customize the entire app. Change :root to your selector if you want to scope the styles.
+// .demo-section {
+//   @include mat.badge-overrides((
+//     background-color: orange,
+//     text-color: red,
+//   ));
+// }
+
+h2 {
+  color: #2c3e50;
+  // font-family: "Ancizar Sans", sans-serif;
+  font-family: 'Barlow', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 2;
+  font-size: 30px;
+}
+
+.matBadge {
+  margin-top: 16px;
+}
+
+.basket-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mat-divider {
+  height: 1px;
+  width: 90%;
+  color: #2c3e50;
+}
+
+.basket-header-text {
+  padding-top: 10px;
+  display: flex;
+}
+
+.cards p {
+  font-size: 30px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: #f8f8f8;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+
+  &:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+    background-color: #ffffff;
+  }
+
+  &:hover {
+    border-color: #8bc34a;
+  }
+
+  &::placeholder {
+    color: #aaa;
+  }
+}
+
+.input-container {
+  display: flex;
+  position: absolute;
+  right: 1%;
+}
+
+.input-container button {
+  position: absolute;
+  right: 10px;
+  top: 55%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.input-container img {
+  width: 20px;
+  height: 20px;
+  opacity: 50%;
+  &:hover {
+    transform: scale(115%);
+  }
+}
+
+.cards {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  flex-grow: 1; 
+}
+
+.total-and-confirm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.total {
+  background-color: white;
+  padding: 20px;
+  min-width: 500px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.result-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.confirm-button {
+  background-color: #4CAF50; 
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+  transition: all 0.3s ease;
+}
+
+.confirm-button:hover {
+  background-color: #45a049;
+  box-shadow: 0 6px 14px rgba(76, 175, 80, 0.4);
+  transform: scale(1.02);
+}
+
+.confirm-button:active {
+  background-color: #3e8e41;
+  transform: scale(0.98);
+}
+
+.clear-button {
+  background-color: #af5c4c; 
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(175, 129, 76, 0.3);
+  transition: all 0.3s ease;
+}
+
+.clear-button:hover {
+  background-color: #a06645;
+  box-shadow: 0 6px 14px rgba(175, 112, 76, 0.4);
+  transform: scale(1.02);
+}
+
+.clear-button:active {
+  background-color: #8e553e;
+  transform: scale(0.98);
+}

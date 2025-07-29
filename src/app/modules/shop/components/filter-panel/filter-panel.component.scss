@@ -1,0 +1,125 @@
+@use '@angular/material' as mat;
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+.ang-mat-slider {
+  @include mat.slider-overrides((
+    active-track-color: rgb(63, 63, 112),
+    // active-track-shape: red,
+    // value-indicator-height: 40px
+    active-track-height: 5px,
+    inactive-track-height: 3px,
+    handle-color: rgb(63, 63, 112)  
+
+  ));
+}
+
+.filters {
+  // height: 200px;
+  width: 310px;
+  padding: 5px 15px 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+
+  background-color: white;
+}
+
+.material-slider {
+  display: flex;
+  flex-direction: row;
+  // justify-content: start;
+}
+
+.slider-value {
+  display: block;
+}
+
+.range-inputs-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.range-input {
+  width: 50px;
+}
+
+:host::ng-deep .filter-div {
+  width: 140px;
+  height: 95px;
+  // text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 15px 0px;
+  background-color: #eeeded;
+}
+
+.filter-div:hover {
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  background-color: #ffffff; 
+}
+
+.price {
+  // width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 5px 0px;
+}
+
+mat-button-toggle-group {
+  border-radius: 10px;
+  height: 50px;
+}
+
+mat-button-toggle {
+  min-width: 100px;
+  padding: 0 16px;
+  background-color: white;
+}
+
+.mat-button-toggle-standalone:not([class*="mat-elevation-z"]),
+.mat-button-toggle-group:not([class*="mat-elevation-z"]) {
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+:host::ng-deep .mat-typography {
+  min-width: 500px;
+}
+
+:host::ng-deep .mat-mdc-dialog-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.filters-container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  // padding: 0px 35px 0px;
+}

@@ -4,11 +4,15 @@ import { MainPageComponent } from "./components/main-page/main-page.component";
 import { PageLink } from "./enums/page-link";
 import { ShopComponent } from "./modules/shop/components/shop/shop.component";
 import { BasketComponent } from "./modules/basket/components/basket/basket.component";
+import { DefaultValueAccessor } from "@angular/forms";
+import { CarDetailComponent } from "./components/car-detail/car-detail.component";
 
 const routes: Routes = [
   { component: MainPageComponent, path: PageLink.MainPage },
   { component: ShopComponent, path: PageLink.Shop },
-  { component: BasketComponent, path: PageLink.Basket }
+  { component: BasketComponent, path: PageLink.Basket },
+  { component: MainPageComponent, path: PageLink.Default },
+  { component: CarDetailComponent, path: PageLink.CarDetail, },
 ];
 
 @NgModule({

@@ -1,5 +1,7 @@
 export enum PageLink {
     MainPage = "main-page",
     Shop = "shop",
-    Basket = "basket"
+    Basket = "basket",
+    Default = "",
+    CarDetail = "item/:id"
 }
