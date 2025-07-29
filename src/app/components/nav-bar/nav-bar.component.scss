@@ -1,4 +1,4 @@
-@import "../../../style/variables.scss";
+// @import "../../../style/variables.scss";
 
 :host {
   display: flex;
@@ -32,7 +32,7 @@
 }
 
 h1 {
-  font-family: "DM Serif Text", serif;
+  font-family: "Special Gothic Expanded One", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #2c3e50;
@@ -40,12 +40,21 @@ h1 {
   user-select: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
+// h1 {
+//   font-family: "DM Serif Text", serif;
+//   font-weight: 400;
+//   font-style: normal;
+
+// }
 
 a {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 100;
+  font-style: normal;
   display: block;
   text-decoration: none;
   color: #2c3e50;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 a:active {

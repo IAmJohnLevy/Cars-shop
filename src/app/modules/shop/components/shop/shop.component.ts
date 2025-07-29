@@ -1,7 +1,8 @@
-import { Component, Input } from "@angular/core";
-import { Icar } from "../../../../model/car";
+import { Component, DestroyRef, inject, Input } from "@angular/core";
+import { ICar } from "../../../../model/car";
 import { FilterDataService } from "../../../../services/filter-data.service";
-import { Subscription } from 'rxjs';
+import { Subject, Subscription, takeUntil } from "rxjs";
+import { CardContext } from "../../../../components/car-card/car-card.component";
 
 
 @Component({
@@ -11,38 +12,41 @@ import { Subscription } from 'rxjs';
   styleUrl: "./shop.component.scss",
 })
 export class ShopComponent {
+  searchValue = "";
+  cars: ICar[] = [];
+  context!: CardContext;
+  CardContext = CardContext;
 
-  searchStringValue: string = '';
+
+  private readonly destroy$ = new Subject<void>();
+
+  // private filterDataService = inject(FilterDataService);
 
   constructor(private filterDataService: FilterDataService) {}
 
-  onCarSelected(car: Icar) {
-    console.log("App component - click event bubbled...", car);
-  }
-    
-  filteredCars: Icar[] = [];
-  private subscription!: Subscription;
-
-  ngOnInit() {
-    this.subscription = this.filterDataService.getFilteredCars().subscribe(cars => {
-      this.filteredCars = cars;
-    });
+  ngOnInit(): void {
+    this.filterDataService
+      .getFilteredCars()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((cars) => {
+        this.cars = cars;
+      });
   }
 
-  ngOnDestroy() {
-    if (this.subscription) {
-      this.subscription.unsubscribe();
-    }
+  ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 
-  onInputChange() {
-    this.filterDataService.searchStringValue = this.searchStringValue;
-    console.log('Значение сохранено в сервисе:', this.filterDataService.searchStringValue);
-    this.subscription = this.filterDataService.getFilteredCars().subscribe(cars => {
-      this.filteredCars = cars;
-    });
-    if (this.subscription) {
-      this.subscription.unsubscribe();
-    }
+  onSearchTermChange(): void {
+    const carsResults = this.cars.filter((car) =>
+      car.description.includes(this.searchValue)
+    );
+
+    this.cars = [...carsResults];
+  }
+
+  onCarSelected(): void {
+    console.log("car selected");
   }
 }

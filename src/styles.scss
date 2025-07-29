@@ -19,3 +19,21 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+// 400 3.562rem / 4rem  sans-serif;
+
+/* Зелёный фон у отмеченного чекбокса */
+.mat-mdc-checkbox.mat-accent .mdc-checkbox--selected .mdc-checkbox__background {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+
+/* Белая галочка */
+.mat-mdc-checkbox.mat-accent .mdc-checkbox__checkmark-path {
+  stroke: white !important;
+}
+
+/* Убрать розовый эффект ripple */
+.mat-mdc-checkbox.mat-accent .mdc-checkbox__ripple {
+  background-color: transparent !important;
+}

@@ -1,15 +1,16 @@
-export interface Icar {
+export interface ICar {
   id: number;
   trueCard?: boolean;
   name: string;
+  automaker: string;
   description: string;
-  exterior: string;
+  exteriorColor: string;
   interior: string;
   engine: string;
   drivetrain: string;
   transmission: string;
-  duelEfficiency: string;
-  keyFeatures: string[];
+  fuelEfficiency: string;
+  features: string[];
 
   longDescription: string;
   imgUrl: string;
@@ -18,4 +19,5 @@ export interface Icar {
   bodystyle: string;
   price: number;
   counts: number;
+  year: number;
 }

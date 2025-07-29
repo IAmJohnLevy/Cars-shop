@@ -7,18 +7,52 @@
     />
   </div>
   <div class="main-page-content">
-    <h2>Добро пожаловать в наш магазин машин!</h2>
-    <h3>Мы предлагаем широкий выбор автомобилей по лучшим ценам.</h3>
-
+    <h2>Welcome to Our Car Shop!</h2>
     <h3>
-      К примеру, если вам захотелось новый седан 2023 года, тогда только у нас
-      вы с легкостью удовлетворите свое желание!
+      At Cars for Everyone, we believe that buying a car should be simple,
+      transparent, and enjoyable. Our mission is to offer a carefully selected
+      range of quality vehicles to suit every taste and budget — from reliable
+      daily drivers to premium models with advanced features.
     </h3>
-    <p>
-      Отличный седан с современным дизайном и передовыми технологиями. Идеальный
-      выбор для комфортной езды.
-    </p>
-    <button class="button">Купить сейчас</button>
-    <button class="button">Узнать больше</button>
+    <h3><b>Why Choose Us:</b></h3>
+    <ul class="main-page-ul">
+      <li>✔️ Wide selection of quality vehicles
+</li>
+      <li>✔️ Competitive, transparent pricing</li>
+      <li>✔️ Friendly and professional service</li>
+    </ul>
+    <h3>
+      With a passion for cars and a commitment to customer satisfaction, we
+      focus on making your shopping experience comfortable and hassle-free.
+      Whether you’re looking to purchase your first car, upgrade your current
+      vehicle, or simply browse the latest offers — we’re here to help at every
+      step.
+    </h3>
+    <h3>
+      Join hundreds of satisfied customers who’ve already found their perfect
+      car with <b>Cars For Everyone</b>.
+    </h3>
+    <a [routerLink]="'/shop'"><button class="button">Buy now</button></a>
+    <button class="button">See more about us</button>
+    <!-- <div id="player">
+      <div>
+        <input
+          type="text"
+          #searchQuery
+          (keyup.enter)="search(searchQuery.value)"
+        />
+        <button (click)="search(searchQuery.value)">Search</button>
+      </div>
+
+      <ul>
+        <li *ngFor="let video of videos">
+          <h3>{{ video.snippet.title }}</h3>
+          <img
+            [src]="video.snippet.thumbnails.default.url"
+            alt="{{ video.snippet.title }}"
+          />
+        </li>
+      </ul>
+    </div> -->
   </div>
 </div>

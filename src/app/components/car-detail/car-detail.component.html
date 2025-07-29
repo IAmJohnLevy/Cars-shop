@@ -1,0 +1,55 @@
+<div class="current-car-name">
+  <h1>
+    <b
+      >{{`${currentCar?.name} ${currentCar?.year} ${currentCar?.exteriorColor}`}}</b
+    >
+  </h1>
+</div>
+<div>
+  <img class="current-car-img" [src]="currentCar?.imgUrl" alt="Car image" />
+</div>
+<div class="description">
+  <h2>Description</h2>
+  <div class="descriprion-field">
+    <pre>{{`${currentCar?.longDescription}`}}</pre>
+  </div>
+  <ul class="ul">
+    <li>{{`Interior: ${currentCar?.interior}`}}</li>
+    <li>{{`Engine: ${currentCar?.engine}`}}</li>
+    <li>{{`Drivetrain: ${currentCar?.drivetrain}`}}</li>
+    <li>{{`Transmission: ${currentCar?.transmission}`}}</li>
+    <li>{{`Fuel efficiency: ${currentCar?.fuelEfficiency}`}}</li>
+    <li>{{`Bodystyle: ${currentCar?.bodystyle}`}}</li>
+  </ul>
+  <div class="buy-btn-container">
+    <button class="button" (click)="sendToBasket()">
+      Make order
+    </button>
+  </div>
+</div>
+<div class="video-section">
+  <div class="header-video-block">
+    <h1>Let's see some video about this vehicle</h1>
+  </div>
+  <div class="video-content">
+    <div class="video" *ngFor="let video of videos">
+      <a
+        [href]="'https://www.youtube.com/watch?v=' + video.id.videoId"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          width="300"
+          height="200"
+          [src]="video.snippet.thumbnails.default.url"
+          alt="{{ video.snippet.title }}"
+        />
+      </a>
+      <p>{{ video.snippet.title }}</p>
+    </div>
+  </div>
+
+  <div class="card-button-container">
+    <button class="button" (click)="goBack()">Return</button>
+  </div>
+</div>

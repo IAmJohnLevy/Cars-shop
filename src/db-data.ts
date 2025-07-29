@@ -1,29 +1,29 @@
-import { Icar } from "./app/model/car";
+import { ICar } from "./app/model/car";
 
-export const ALL_CARS: Icar[] = [
+export const ALL_CARS: ICar[] = [
   {
     id: 1,
     trueCard: true,
     name: "Chevrolet Trax 1RS",
+    automaker: "Chevrolet",
+    year: 2024,
     description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
-    exterior: "White",
+    exteriorColor: "White",
     interior: "Jet Black/Gray With Red Accents",
     engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
     drivetrain: "FWD",
     transmission: "6-Speed Automatic",
-    duelEfficiency: "28 CITY / 32 HWY",
-    keyFeatures: [
+    fuelEfficiency: "28 CITY / 32 HWY",
+    features: [
       "Backup Camera",
       "Heated Seats",
       "Keyless Entry",
       "Parking Sensors / Assist",
       "Premium Audio",
     ],
-
     longDescription:
-      "Call McCluskey Chevrolet at 513-776-3452 to schedule your Free 48 Hour Test Drive.\n\nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 513-776-3452 to learn more about these savings.\n\nSummit White 2024 Chevrolet Trax 1RS\n1.2L Ecotec Turbo DOHC DI w/VVT\n28/32 City/Highway MPG\n\nFactory MSRP: $24,035",
+      "Call McCluskey Chevrolet at 123-456-7890 to schedule your Free 48 Hour Test Drive.\n\nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 123-456-7890 to learn more about these savings.\n\nSummit White 2024 Chevrolet Trax 1RS\n1.2L Ecotec Turbo DOHC DI w/VVT\n28/32 City/Highway MPG\n\nFactory MSRP: $24,035",
     imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
-
     premiumOptionsAndPackages: [
       "Exterior Parking Camera Rear",
       "Heated front seats",
@@ -32,32 +32,32 @@ export const ALL_CARS: Icar[] = [
       "Premium audio system: Chevrolet Infotainment 3",
     ],
     bodystyle: "SUV",
-    price: 24.035,
-    counts: 10
+    price: 24035,
+    counts: 10,
   },
   {
     id: 2,
     trueCard: true,
     name: "Chevrolet Trax 1RS",
+    automaker: "Chevrolet",
+    year: 2025,
     description: "New 2025 Chevrolet Trax 1RS FWD 4D Sport Utility",
-    exterior: "Black",
+    exteriorColor: "Black",
     interior: "Jet Black/Gray With Red Accents",
     engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
     drivetrain: "FWD",
     transmission: "6-Speed Automatic",
-    duelEfficiency: "28 CITY / 32 HWY",
-    keyFeatures: [
+    fuelEfficiency: "28 CITY / 32 HWY",
+    features: [
       "Backup Camera",
       "Heated Seats",
       "Keyless Entry",
       "Parking Sensors / Assist",
       "Premium Audio",
     ],
-
     longDescription:
-      "Call McCluskey Chevrolet at 513-776-3452 to schedule your Free 48 Hour Test Drive.\n\nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 513-776-3452 to learn more about these savings.\n\nMosaic Black Metallic 2025 Chevrolet Trax 1RS\n1.2L Ecotec Turbo DOHC DI w/VVT\n28/32 City/Highway MPG\n\nFactory MSRP: $24,480\n\nAwards:\n* Car and Driver 10 Best\nCar and Driver, January 2017.",
+      "Call McCluskey Chevrolet at 123-456-7890 to schedule your Free 48 Hour Test Drive.\n\nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 123-456-7890 to learn more about these savings.\n\nMosaic Black Metallic 2025 Chevrolet Trax 1RS\n1.2L Ecotec Turbo DOHC DI w/VVT\n28/32 City/Highway MPG\n\nFactory MSRP: $24,480\n\nAwards:\n* Car and Driver 10 Best\nCar and Driver, January 2017.",
     imgUrl: "assets/img/Chevrolet_Trax_1RS_black.jpg",
-
     premiumOptionsAndPackages: [
       "Exterior Parking Camera Rear",
       "Heated front seats",
@@ -66,82 +66,81 @@ export const ALL_CARS: Icar[] = [
       "Premium audio system: Chevrolet Infotainment 3",
     ],
     bodystyle: "SUV",
-    price: 24.480,
-    counts: 10
+    price: 24480,
+    counts: 10,
   },
   {
     id: 3,
     trueCard: true,
     name: "Chevrolet Express 3500 Work Van",
+    automaker: "Chevrolet",
+    year: 2024,
     description: "New 2024 Chevrolet Express 3500 Work Van RWD 2D Chassis",
-    exterior: "White",
+    exteriorColor: "White",
     interior: "Medium Pewter",
     engine: "6.6L V8",
     drivetrain: "RWD",
     transmission: "8-Speed Automatic",
-    duelEfficiency: "",
-    keyFeatures: [
-      "Backup Camera",
-      "Keyless Entry"
-    ],
-
+    fuelEfficiency: "",
+    features: ["Backup Camera", "Keyless Entry"],
     longDescription:
       "Call a McCluskey Chevrolet Commercial Specialist (513)776-3452 for details and special deals!\n\nSummit White 2024 Chevrolet Express 3500 Work Van Cutaway\n6.6L V8\n\nFactory MSRP: $42,105 Ask About Our $500 Best Price Guarantee. You May Qualify For THOUSANDS MORE of Additional GM Rebates...We Will Verify Which Ones You Qualify For Upon Your Arrival at McCluskey Chevrolet. $1500 - Chevrolet Consumer Cash Program. Exp. 06/02/2025",
     imgUrl: "assets/img/Chevrolet_Express_3500_Work_Van_white.jpg",
-
     premiumOptionsAndPackages: [
       "Exterior Parking Camera Rear",
-      "Remote keyless entry"
+      "Remote keyless entry",
     ],
     bodystyle: "2D Chassis",
-    price: 42.105,
-    counts: 4
+    price: 42105,
+    counts: 4,
   },
   {
     id: 4,
     trueCard: true,
     name: "Chevrolet Malibu LS",
+    automaker: "Chevrolet",
+    year: 2024,
     description: "New 2024 Chevrolet Malibu LS FWD 4D Sedan",
-    exterior: "White",
+    exteriorColor: "White",
     interior: "Jet Black",
     engine: "1.5L DOHC",
     drivetrain: "FWD",
     transmission: "CVT",
-    duelEfficiency: "28 CITY / 36 HWY",
-    keyFeatures: [
+    fuelEfficiency: "28 CITY / 36 HWY",
+    features: [
       "Android Auto",
       "Apple CarPlay",
       "Backup Camera",
       "Keyless Entry",
       "Premium Audio",
     ],
-
     longDescription:
-      "Call McCluskey Chevrolet at 513-776-3452 to schedule your Free 48 Hour Test Drive.\n\nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 513-776-3452 to learn more about these savings.\n\nSummit White 2024 Chevrolet Malibu LS 1LS\n1.5L DOHC\n27/35 City/Highway MPG\n\nFactory MSRP: $26,620\n$1,750 off MSRP!\n\nJet Black Cloth. Ask About Our $500 Best Price Guarantee. You May Qualify For THOUSANDS MORE of Additional GM Rebates...We Will Verify Which Ones You Qualify For Upon Your Arrival at McCluskey Chevrolet. $1750 - Chevrolet Consumer Cash Program. Exp. 06/02/2025",
+      "Call McCluskey Chevrolet at 123-456-7890 to schedule your Free 48 Hour Test Drive.\n\nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 123-456-7890 to learn more about these savings.\n\nSummit White 2024 Chevrolet Malibu LS 1LS\n1.5L DOHC\n27/35 City/Highway MPG\n\nFactory MSRP: $26,620\n$1,750 off MSRP!\n\nJet Black Cloth. Ask About Our $500 Best Price Guarantee. You May Qualify For THOUSANDS MORE of Additional GM Rebates...We Will Verify Which Ones You Qualify For Upon Your Arrival at McCluskey Chevrolet. $1750 - Chevrolet Consumer Cash Program. Exp. 06/02/2025",
     imgUrl: "assets/img/Chevrolet_Malibu_LS_white.jpg",
-
     premiumOptionsAndPackages: [
       "Wireless Apple CarPlay/Android Auto",
       "Exterior Parking Camera Rear",
       "Remote keyless entry",
-      "Premium audio system: Chevrolet Infotainment 3"
+      "Premium audio system: Chevrolet Infotainment 3",
     ],
     bodystyle: "Car",
-    price: 24.752,
-    counts: 14
+    price: 24752,
+    counts: 14,
   },
   {
     id: 5,
     trueCard: true,
     name: "Chevrolet Corvette Stingray",
+    automaker: "Chevrolet",
+    year: 2025,
     description: "New 2025 Chevrolet Corvette Stingray RWD 2D Convertible",
-    exterior: "Black",
+    exteriorColor: "Black",
     interior: "Natural",
     engine: "6.2L V8",
     drivetrain: "RWD",
     transmission: "8-Speed Dual Clutch",
-    duelEfficiency: "16 CITY / 24 HWY",
-    keyFeatures: [
+    fuelEfficiency: "16 CITY / 24 HWY",
+    features: [
       "Backup Camera",
       "Heated Seats",
       "Keyless Entry",
@@ -152,11 +151,9 @@ export const ALL_CARS: Icar[] = [
       "Premium Audio",
       "Wireless Phone Charging",
     ],
-
     longDescription:
       "Call McCluskey Chevrolet at 513-741-1111 to schedule your Free 48 Hour Test Drive.\n\nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 513-741-1111 to learn more about these savings.\n\nBlack 2025 Chevrolet Corvette Stingray 2LT\n6.2L V8\n\nFactory MSRP: $86,485\n\nAwards:\n* Car and Driver 10 Best\nCar and Driver, January 2017.",
     imgUrl: "assets/img/Chevrolet_Corvette_Stingray_black.jpg",
-
     premiumOptionsAndPackages: [
       "Exterior Parking Camera Rear",
       "Heated front seats",
@@ -169,32 +166,32 @@ export const ALL_CARS: Icar[] = [
       "Wireless Charging for Devices",
     ],
     bodystyle: "Convertible",
-    price: 86.485,
-    counts: 1
+    price: 86485,
+    counts: 1,
   },
   {
     id: 6,
     trueCard: false,
     name: "Chevrolet Trax 1RS",
+    automaker: "Chevrolet",
+    year: 2024,
     description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
-    exterior: "White",
+    exteriorColor: "White",
     interior: "Jet Black/Gray With Red Accents",
     engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
     drivetrain: "FWD",
     transmission: "6-Speed Automatic",
-    duelEfficiency: "28 CITY / 32 HWY",
-    keyFeatures: [
+    fuelEfficiency: "28 CITY / 32 HWY",
+    features: [
       "Backup Camera",
       "Heated Seats",
       "Keyless Entry",
       "Parking Sensors / Assist",
       "Premium Audio",
     ],
-
     longDescription:
-      "Call McCluskey Chevrolet at 513-776-3452 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 513-776-3452 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
+      "Call McCluskey Chevrolet at 123-456-7890 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 123-456-7890 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
     imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
-
     premiumOptionsAndPackages: [
       "Exterior Parking Camera Rear",
       "Heated front seats",
@@ -203,32 +200,32 @@ export const ALL_CARS: Icar[] = [
       "Premium audio system: Chevrolet Infotainment 3",
     ],
     bodystyle: "SUV",
-    price: 24.035,
-    counts: 10
+    price: 24035,
+    counts: 10,
   },
   {
     id: 7,
     trueCard: false,
     name: "Chevrolet Trax 1RS",
+    automaker: "Chevrolet",
+    year: 2024,
     description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
-    exterior: "White",
+    exteriorColor: "White",
     interior: "Jet Black/Gray With Red Accents",
     engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
     drivetrain: "FWD",
     transmission: "6-Speed Automatic",
-    duelEfficiency: "28 CITY / 32 HWY",
-    keyFeatures: [
+    fuelEfficiency: "28 CITY / 32 HWY",
+    features: [
       "Backup Camera",
       "Heated Seats",
       "Keyless Entry",
       "Parking Sensors / Assist",
       "Premium Audio",
     ],
-
     longDescription:
-      "Call McCluskey Chevrolet at 513-776-3452 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 513-776-3452 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
+      "Call McCluskey Chevrolet at 123-456-7890 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 123-456-7890 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
     imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
-
     premiumOptionsAndPackages: [
       "Exterior Parking Camera Rear",
       "Heated front seats",
@@ -237,316 +234,249 @@ export const ALL_CARS: Icar[] = [
       "Premium audio system: Chevrolet Infotainment 3",
     ],
     bodystyle: "SUV",
-    price: 24.035,
-    counts: 10
+    price: 24035,
+    counts: 10,
   },
   {
     id: 8,
     trueCard: false,
-    name: "Chevrolet Trax 1RS",
-    description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
-    exterior: "White",
-    interior: "Jet Black/Gray With Red Accents",
-    engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
+    name: "Chevrolet Malibu LS",
+    automaker: "Chevrolet",
+    year: 2024,
+    description: "New 2024 Chevrolet Malibu LS FWD 4D Sedan",
+    exteriorColor: "White",
+    interior: "Jet Black",
+    engine: "1.5L DOHC",
     drivetrain: "FWD",
-    transmission: "6-Speed Automatic",
-    duelEfficiency: "28 CITY / 32 HWY",
-    keyFeatures: [
+    transmission: "CVT",
+    fuelEfficiency: "28 CITY / 36 HWY",
+    features: [
+      "Android Auto",
+      "Apple CarPlay",
       "Backup Camera",
-      "Heated Seats",
       "Keyless Entry",
-      "Parking Sensors / Assist",
       "Premium Audio",
     ],
-
     longDescription:
-      "Call McCluskey Chevrolet at 513-776-3452 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 513-776-3452 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
-    imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
-
+      "Call McCluskey Chevrolet at 123-456-7890 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 123-456-7890 to learn more about these savings./n/nSummit White 2024 Chevrolet Malibu LS 1LS/n1.5L DOHC/n27/35 City/Highway MPG/n/nFactory MSRP: $26,620/n$1,750 off MSRP!/n/nJet Black Cloth. Ask About Our $500 Best Price Guarantee. You May Qualify For THOUSANDS MORE of Additional GM Rebates...We Will Verify Which Ones You Qualify For Upon Your Arrival at McCluskey Chevrolet. $1750 - Chevrolet Consumer Cash Program. Exp. 06/02/2025",
+    imgUrl: "assets/img/Chevrolet_Malibu_LS_white.jpg",
     premiumOptionsAndPackages: [
+      "Wireless Apple CarPlay/Android Auto",
       "Exterior Parking Camera Rear",
-      "Heated front seats",
       "Remote keyless entry",
-      "Rear Park Assist (DISC)",
       "Premium audio system: Chevrolet Infotainment 3",
     ],
-    bodystyle: "SUV",
-    price: 24.035,
-    counts: 10
+    bodystyle: "Car",
+    price: 24752,
+    counts: 14,
   },
-  {
-    id: 9,
-    trueCard: false,
-    name: "Chevrolet Trax 1RS",
-    description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
-    exterior: "White",
-    interior: "Jet Black/Gray With Red Accents",
-    engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
-    drivetrain: "FWD",
-    transmission: "6-Speed Automatic",
-    duelEfficiency: "28 CITY / 32 HWY",
-    keyFeatures: [
-      "Backup Camera",
-      "Heated Seats",
-      "Keyless Entry",
-      "Parking Sensors / Assist",
-      "Premium Audio",
-    ],
-
-    longDescription:
-      "Call McCluskey Chevrolet at 513-776-3452 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 513-776-3452 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
-    imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
-
-    premiumOptionsAndPackages: [
-      "Exterior Parking Camera Rear",
-      "Heated front seats",
-      "Remote keyless entry",
-      "Rear Park Assist (DISC)",
-      "Premium audio system: Chevrolet Infotainment 3",
-    ],
-    bodystyle: "SUV",
-    price: 24.035,
-    counts: 10
-  },
-  {
-    id: 10,
-    trueCard: false,
-    name: "Chevrolet Trax 1RS",
-    description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
-    exterior: "White",
-    interior: "Jet Black/Gray With Red Accents",
-    engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
-    drivetrain: "FWD",
-    transmission: "6-Speed Automatic",
-    duelEfficiency: "28 CITY / 32 HWY",
-    keyFeatures: [
-      "Backup Camera",
-      "Heated Seats",
-      "Keyless Entry",
-      "Parking Sensors / Assist",
-      "Premium Audio",
-    ],
-
-    longDescription:
-      "Call McCluskey Chevrolet at 513-776-3452 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 513-776-3452 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
-    imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
-
-    premiumOptionsAndPackages: [
-      "Exterior Parking Camera Rear",
-      "Heated front seats",
-      "Remote keyless entry",
-      "Rear Park Assist (DISC)",
-      "Premium audio system: Chevrolet Infotainment 3",
-    ],
-    bodystyle: "SUV",
-    price: 24.035,
-    counts: 10
-  },
-  {
-    id: 11,
-    trueCard: false,
-    name: "Chevrolet Trax 1RS",
-    description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
-    exterior: "White",
-    interior: "Jet Black/Gray With Red Accents",
-    engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
-    drivetrain: "FWD",
-    transmission: "6-Speed Automatic",
-    duelEfficiency: "28 CITY / 32 HWY",
-    keyFeatures: [
-      "Backup Camera",
-      "Heated Seats",
-      "Keyless Entry",
-      "Parking Sensors / Assist",
-      "Premium Audio",
-    ],
-
-    longDescription:
-      "Call McCluskey Chevrolet at 513-776-3452 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 513-776-3452 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
-    imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
-
-    premiumOptionsAndPackages: [
-      "Exterior Parking Camera Rear",
-      "Heated front seats",
-      "Remote keyless entry",
-      "Rear Park Assist (DISC)",
-      "Premium audio system: Chevrolet Infotainment 3",
-    ],
-    bodystyle: "SUV",
-    price: 24.035,
-    counts: 10
-  },
-  {
-    id: 12,
-    trueCard: false,
-    name: "Chevrolet Trax 1RS",
-    description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
-    exterior: "White",
-    interior: "Jet Black/Gray With Red Accents",
-    engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
-    drivetrain: "FWD",
-    transmission: "6-Speed Automatic",
-    duelEfficiency: "28 CITY / 32 HWY",
-    keyFeatures: [
-      "Backup Camera",
-      "Heated Seats",
-      "Keyless Entry",
-      "Parking Sensors / Assist",
-      "Premium Audio",
-    ],
-
-    longDescription:
-      "Call McCluskey Chevrolet at 513-776-3452 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 513-776-3452 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
-    imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
-
-    premiumOptionsAndPackages: [
-      "Exterior Parking Camera Rear",
-      "Heated front seats",
-      "Remote keyless entry",
-      "Rear Park Assist (DISC)",
-      "Premium audio system: Chevrolet Infotainment 3",
-    ],
-    bodystyle: "SUV",
-    price: 24.035,
-    counts: 10
-  },
-  {
-    id: 13,
-    trueCard: false,
-    name: "Chevrolet Trax 1RS",
-    description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
-    exterior: "White",
-    interior: "Jet Black/Gray With Red Accents",
-    engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
-    drivetrain: "FWD",
-    transmission: "6-Speed Automatic",
-    duelEfficiency: "28 CITY / 32 HWY",
-    keyFeatures: [
-      "Backup Camera",
-      "Heated Seats",
-      "Keyless Entry",
-      "Parking Sensors / Assist",
-      "Premium Audio",
-    ],
-
-    longDescription:
-      "Call McCluskey Chevrolet at 513-776-3452 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 513-776-3452 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
-    imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
-
-    premiumOptionsAndPackages: [
-      "Exterior Parking Camera Rear",
-      "Heated front seats",
-      "Remote keyless entry",
-      "Rear Park Assist (DISC)",
-      "Premium audio system: Chevrolet Infotainment 3",
-    ],
-    bodystyle: "SUV",
-    price: 24.035,
-    counts: 10
-  },
-  {
-    id: 14,
-    trueCard: false,
-    name: "Chevrolet Trax 1RS",
-    description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
-    exterior: "White",
-    interior: "Jet Black/Gray With Red Accents",
-    engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
-    drivetrain: "FWD",
-    transmission: "6-Speed Automatic",
-    duelEfficiency: "28 CITY / 32 HWY",
-    keyFeatures: [
-      "Backup Camera",
-      "Heated Seats",
-      "Keyless Entry",
-      "Parking Sensors / Assist",
-      "Premium Audio",
-    ],
-
-    longDescription:
-      "Call McCluskey Chevrolet at 513-776-3452 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 513-776-3452 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
-    imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
-
-    premiumOptionsAndPackages: [
-      "Exterior Parking Camera Rear",
-      "Heated front seats",
-      "Remote keyless entry",
-      "Rear Park Assist (DISC)",
-      "Premium audio system: Chevrolet Infotainment 3",
-    ],
-    bodystyle: "SUV",
-    price: 24.035,
-    counts: 10
-  },
-  {
-    id: 15,
-    trueCard: false,
-    name: "Chevrolet Trax 1RS",
-    description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
-    exterior: "White",
-    interior: "Jet Black/Gray With Red Accents",
-    engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
-    drivetrain: "FWD",
-    transmission: "6-Speed Automatic",
-    duelEfficiency: "28 CITY / 32 HWY",
-    keyFeatures: [
-      "Backup Camera",
-      "Heated Seats",
-      "Keyless Entry",
-      "Parking Sensors / Assist",
-      "Premium Audio",
-    ],
-
-    longDescription:
-      "Call McCluskey Chevrolet at 513-776-3452 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 513-776-3452 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
-    imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
-
-    premiumOptionsAndPackages: [
-      "Exterior Parking Camera Rear",
-      "Heated front seats",
-      "Remote keyless entry",
-      "Rear Park Assist (DISC)",
-      "Premium audio system: Chevrolet Infotainment 3",
-    ],
-    bodystyle: "SUV",
-    price: 24.035,
-    counts: 10
-  },
-  {
-    id: 16,
-    trueCard: false,
-    name: "Chevrolet Trax 1RS",
-    description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
-    exterior: "White",
-    interior: "Jet Black/Gray With Red Accents",
-    engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
-    drivetrain: "FWD",
-    transmission: "6-Speed Automatic",
-    duelEfficiency: "28 CITY / 32 HWY",
-    keyFeatures: [
-      "Backup Camera",
-      "Heated Seats",
-      "Keyless Entry",
-      "Parking Sensors / Assist",
-      "Premium Audio",
-    ],
-
-    longDescription:
-      "Call McCluskey Chevrolet at 513-776-3452 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 513-776-3452 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
-    imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
-
-    premiumOptionsAndPackages: [
-      "Exterior Parking Camera Rear",
-      "Heated front seats",
-      "Remote keyless entry",
-      "Rear Park Assist (DISC)",
-      "Premium audio system: Chevrolet Infotainment 3",
-    ],
-    bodystyle: "SUV",
-    price: 24.035,
-    counts: 10
-  }
 ];
+
+//   {
+//     id: 11,
+//     trueCard: false,
+//     name: "Chevrolet Trax 1RS",
+//     description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
+//     exterior: "White",
+//     interior: "Jet Black/Gray With Red Accents",
+//     engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
+//     drivetrain: "FWD",
+//     transmission: "6-Speed Automatic",
+//     duelEfficiency: "28 CITY / 32 HWY",
+//     keyFeatures: [
+//       "Backup Camera",
+//       "Heated Seats",
+//       "Keyless Entry",
+//       "Parking Sensors / Assist",
+//       "Premium Audio",
+//     ],
+
+//     longDescription:
+//       "Call McCluskey Chevrolet at 123-456-7890 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 123-456-7890 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
+//     imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
+
+//     premiumOptionsAndPackages: [
+//       "Exterior Parking Camera Rear",
+//       "Heated front seats",
+//       "Remote keyless entry",
+//       "Rear Park Assist (DISC)",
+//       "Premium audio system: Chevrolet Infotainment 3",
+//     ],
+//     bodystyle: "SUV",
+//     price: 24.035,
+//     counts: 10
+//   },
+//   {
+//     id: 12,
+//     trueCard: false,
+//     name: "Chevrolet Trax 1RS",
+//     description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
+//     exterior: "White",
+//     interior: "Jet Black/Gray With Red Accents",
+//     engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
+//     drivetrain: "FWD",
+//     transmission: "6-Speed Automatic",
+//     duelEfficiency: "28 CITY / 32 HWY",
+//     keyFeatures: [
+//       "Backup Camera",
+//       "Heated Seats",
+//       "Keyless Entry",
+//       "Parking Sensors / Assist",
+//       "Premium Audio",
+//     ],
+
+//     longDescription:
+//       "Call McCluskey Chevrolet at 123-456-7890 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call v to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
+//     imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
+
+//     premiumOptionsAndPackages: [
+//       "Exterior Parking Camera Rear",
+//       "Heated front seats",
+//       "Remote keyless entry",
+//       "Rear Park Assist (DISC)",
+//       "Premium audio system: Chevrolet Infotainment 3",
+//     ],
+//     bodystyle: "SUV",
+//     price: 24.035,
+//     counts: 10
+//   },
+//   {
+//     id: 13,
+//     trueCard: false,
+//     name: "Chevrolet Trax 1RS",
+//     description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
+//     exterior: "White",
+//     interior: "Jet Black/Gray With Red Accents",
+//     engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
+//     drivetrain: "FWD",
+//     transmission: "6-Speed Automatic",
+//     duelEfficiency: "28 CITY / 32 HWY",
+//     keyFeatures: [
+//       "Backup Camera",
+//       "Heated Seats",
+//       "Keyless Entry",
+//       "Parking Sensors / Assist",
+//       "Premium Audio",
+//     ],
+
+//     longDescription:
+//       "Call McCluskey Chevrolet at 123-456-7890 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 123-456-7890 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
+//     imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
+
+//     premiumOptionsAndPackages: [
+//       "Exterior Parking Camera Rear",
+//       "Heated front seats",
+//       "Remote keyless entry",
+//       "Rear Park Assist (DISC)",
+//       "Premium audio system: Chevrolet Infotainment 3",
+//     ],
+//     bodystyle: "SUV",
+//     price: 24.035,
+//     counts: 10
+//   },
+//   {
+//     id: 14,
+//     trueCard: false,
+//     name: "Chevrolet Trax 1RS",
+//     description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
+//     exterior: "White",
+//     interior: "Jet Black/Gray With Red Accents",
+//     engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
+//     drivetrain: "FWD",
+//     transmission: "6-Speed Automatic",
+//     duelEfficiency: "28 CITY / 32 HWY",
+//     keyFeatures: [
+//       "Backup Camera",
+//       "Heated Seats",
+//       "Keyless Entry",
+//       "Parking Sensors / Assist",
+//       "Premium Audio",
+//     ],
+
+//     longDescription:
+//       "Call McCluskey Chevrolet at 123-456-7890 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 123-456-7890 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
+//     imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
+
+//     premiumOptionsAndPackages: [
+//       "Exterior Parking Camera Rear",
+//       "Heated front seats",
+//       "Remote keyless entry",
+//       "Rear Park Assist (DISC)",
+//       "Premium audio system: Chevrolet Infotainment 3",
+//     ],
+//     bodystyle: "SUV",
+//     price: 24.035,
+//     counts: 10
+//   },
+//   {
+//     id: 15,
+//     trueCard: false,
+//     name: "Chevrolet Trax 1RS",
+//     description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
+//     exterior: "White",
+//     interior: "Jet Black/Gray With Red Accents",
+//     engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
+//     drivetrain: "FWD",
+//     transmission: "6-Speed Automatic",
+//     duelEfficiency: "28 CITY / 32 HWY",
+//     keyFeatures: [
+//       "Backup Camera",
+//       "Heated Seats",
+//       "Keyless Entry",
+//       "Parking Sensors / Assist",
+//       "Premium Audio",
+//     ],
+
+//     longDescription:
+//       "Call McCluskey Chevrolet at 123-456-7890 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 123-456-7890 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
+//     imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
+
+//     premiumOptionsAndPackages: [
+//       "Exterior Parking Camera Rear",
+//       "Heated front seats",
+//       "Remote keyless entry",
+//       "Rear Park Assist (DISC)",
+//       "Premium audio system: Chevrolet Infotainment 3",
+//     ],
+//     bodystyle: "SUV",
+//     price: 24.035,
+//     counts: 10
+//   },
+//   {
+//     id: 16,
+//     trueCard: false,
+//     name: "Chevrolet Trax 1RS",
+//     description: "New 2024 Chevrolet Trax 1RS FWD 4D Sport Utility",
+//     exterior: "White",
+//     interior: "Jet Black/Gray With Red Accents",
+//     engine: "1.2L Ecotec Turbo DOHC DI w/VVT",
+//     drivetrain: "FWD",
+//     transmission: "6-Speed Automatic",
+//     duelEfficiency: "28 CITY / 32 HWY",
+//     keyFeatures: [
+//       "Backup Camera",
+//       "Heated Seats",
+//       "Keyless Entry",
+//       "Parking Sensors / Assist",
+//       "Premium Audio",
+//     ],
+
+//     longDescription:
+//       "Call McCluskey Chevrolet at 123-456-7890 to schedule your Free 48 Hour Test Drive./n/nMCCLUSKEY CHEVROLET'S FREE LIFETIME MECHANICAL WARRANTY Unlimited Miles. Unlimited Years. Fully-Insured. Besides our Guaranteed Lowest Prices on all brand new Chevrolet vehicles---we offer savings up to $17,000 on over 700 Nearly-New (under 10,000 miles) 2016 and 2015 Chevrolet, Cadillac, GMC, and Buick Pre-Owned Models---ALL with our FREE LIFETIME MECHANICAL PROTECTION! Call 123-456-7890 to learn more about these savings./n/nSummit White 2024 Chevrolet Trax 1RS/n1.2L Ecotec Turbo DOHC DI w/VVT/n28/32 City/Highway MPG/n/nFactory MSRP: $24,035",
+//     imgUrl: "assets/img/Chevrolet_Trax_1RS_white.jpg",
+
+//     premiumOptionsAndPackages: [
+//       "Exterior Parking Camera Rear",
+//       "Heated front seats",
+//       "Remote keyless entry",
+//       "Rear Park Assist (DISC)",
+//       "Premium audio system: Chevrolet Infotainment 3",
+//     ],
+//     bodystyle: "SUV",
+//     price: 24.035,
+//     counts: 10
+//   }
+// ];
 
 export function findCarById(carId: number) {
   return ALL_CARS.find((car) => car.id === carId);

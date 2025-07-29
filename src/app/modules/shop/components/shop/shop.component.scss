@@ -8,14 +8,17 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   // grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
   gap: 10px;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 h2 {
   color: #2c3e50;
-  font-family: "Ancizar Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
+  // font-family: "Ancizar Sans", sans-serif;
+  font-family: 'Barlow', sans-serif;
+  // font-optical-sizing: auto;
+  // font-weight: 500;
+  // font-family: "Special Gothic", sans-serif;
+  font-weight: 400;
   font-style: normal;
   line-height: 2;
   font-size: 30px;
@@ -49,11 +52,12 @@ input {
   font-size: 16px;
   font-family: inherit;
   background-color: #f8f8f8;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
 
   &:focus {
     outline: none;
-    border-color: #4CAF50;
+    border-color: #4caf50;
     box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
     background-color: #ffffff;
   }
@@ -88,7 +92,7 @@ input {
   height: 20px;
   opacity: 50%;
   &:hover {
-    transform:scale(115%);
+    transform: scale(115%);
   }
 }
 
@@ -97,7 +101,6 @@ input {
 // }
 
 .mat-divider.mat-divider-vertical {
-  
   margin: 0 5px;
 }
 
@@ -108,4 +111,5 @@ input {
 
 .card-container {
   flex-grow: 1;
+  padding: 10px 5px 20px;
 }

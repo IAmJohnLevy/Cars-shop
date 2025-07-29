@@ -13,9 +13,12 @@ import { MainPageComponent } from "./components/main-page/main-page.component";
 import { ShopModule } from "./modules/shop/shop.module";
 import { BasketModule } from "./modules/basket/basket.module";
 import { CarCardComponent } from "./components/car-card/car-card.component";
+import { provideHttpClient, withInterceptorsFromDi } from "@angular/common/http";
+import { CarDetailComponent } from './components/car-detail/car-detail.component';
+
 
 @NgModule({
-  declarations: [AppComponent, NavBarComponent, MainPageComponent],
+  declarations: [AppComponent, NavBarComponent, MainPageComponent, CarDetailComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -28,7 +31,7 @@ import { CarCardComponent } from "./components/car-card/car-card.component";
     BasketModule,
     CarCardComponent,
   ],
-  providers: [],
+  providers: [ provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

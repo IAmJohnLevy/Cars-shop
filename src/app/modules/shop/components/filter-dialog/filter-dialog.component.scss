@@ -1,0 +1,57 @@
+.checkbox-div {
+  background-image: linear-gradient(
+    to right,
+    #3498db,
+   #85bce0
+  );
+  margin: 5px;
+
+  &:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  }
+}
+
+button {
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 3px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+::ng-deep .mat-internal-form-field>label {
+    color: #ffffff;
+}
+
+.mat-mdc-button:not(:disabled) {
+    color: #ffffff;
+}
+
+.mat-mdc-checkbox-touch-target {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 48px;
+    width: 48px;
+    transform: translate(-50%, -50%);
+}
+
+::ng-deep .mat-mdc-checkbox.mat-accent .mdc-checkbox--selected .mdc-checkbox__background {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+
+::ng-deep .mat-mdc-checkbox.mat-accent .mdc-checkbox--selected .mdc-checkbox__checkmark-path {
+  stroke: white !important;
+}

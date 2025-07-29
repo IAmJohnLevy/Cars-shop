@@ -1,5 +1,5 @@
 export enum PageName {
-    MainPage = "Main page",
-    Shop = "Shop",
-    Basket = "Basket"
+    MainPage = "MAIN PAGE",
+    Shop = "SHOP",
+    Basket = "BASKET"
 }

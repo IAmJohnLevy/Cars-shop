@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule, Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { CarCardComponent } from "../../components/car-card/car-card.component";
 import { FilterPanelComponent } from "./components/filter-panel/filter-panel.component";
@@ -9,8 +9,14 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
 
+import { MatDialog, MatDialogModule } from "@angular/material/dialog";
+import { FilterDialogComponent } from './components/filter-dialog/filter-dialog.component';
+
+import {MatSliderModule} from '@angular/material/slider';
+import {MatInputModule} from '@angular/material/input';
+
 @NgModule({
-  declarations: [FilterPanelComponent, ShopComponent],
+  declarations: [FilterPanelComponent, ShopComponent, FilterDialogComponent],
   imports: [
     CommonModule,
     CarCardComponent,
@@ -18,7 +24,11 @@ import { MatButtonToggleModule } from "@angular/material/button-toggle";
     FormsModule,
     MatButtonModule,
     MatDividerModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatSliderModule,
+    MatInputModule
   ],
   exports: [ShopComponent, FilterPanelComponent],
 })

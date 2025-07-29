@@ -1,0 +1,128 @@
+<!-- <h2 mat-dialog-title>Select {{ filterNames[currentFilterName] }}</h2> -->
+<h2 mat-dialog-title>Select {{ currentFilterName }}</h2>
+<mat-dialog-content class="mat-typography">
+  <div class="checkbox-container">
+    @if (currentFilterName === "year") { @for (year of years; track $index) {
+    <div class="checkbox-div">
+      <mat-checkbox
+        class="filters-checkbox"
+        [checked]="checkboxStates[year]"
+        (change)="onCheckToggle(year)"
+      >
+        {{ year }}
+      </mat-checkbox>
+    </div>
+
+    } @empty {
+    <p>No elements found to this filter</p>
+    }} @if (currentFilterName === "name") { @for (name of names; track $index) {
+    <div class="checkbox-div">
+      <mat-checkbox
+        class="filters-checkbox"
+        [checked]="checkboxStates[name]"
+        (change)="onCheckToggle(name)"
+      >
+        {{ name }}
+      </mat-checkbox>
+    </div>
+
+    } @empty {
+    <p>No elements found to this filter</p>
+    }} @if (currentFilterName === "exteriorColor") { @for (exteriorColor of
+    exteriorColors; track $index) {
+    <div class="checkbox-div">
+      <mat-checkbox
+        class="filters-checkbox"
+        [checked]="checkboxStates[exteriorColor]"
+        (change)="onCheckToggle(exteriorColor)"
+      >
+        {{ exteriorColor }}
+      </mat-checkbox>
+    </div>
+
+    } @empty {
+    <p>No elements found to this filter</p>
+    }} @if (currentFilterName === "features") { @for (feature of features; track
+    $index) {
+    <div class="checkbox-div">
+      <mat-checkbox
+        class="filters-checkbox"
+        [checked]="checkboxStates[feature]"
+        (change)="onCheckToggle(feature)"
+      >
+        {{ feature }}
+      </mat-checkbox>
+    </div>
+
+    } @empty {
+    <p>No elements found to this filter or this filter is on development</p>
+    }} @if (currentFilterName === "automakers") { @for (automaker of automakers;
+    track $index) {
+    <div class="checkbox-div">
+      <mat-checkbox
+        class="filters-checkbox"
+        [checked]="checkboxStates[automaker]"
+        (change)="onCheckToggle(automaker)"
+      >
+        {{ automaker }}
+      </mat-checkbox>
+    </div>
+
+    } @empty {
+    <p>No elements found to this filter</p>
+    } } @if (currentFilterName === "engines") { @for (engine of engines; track
+    $index) {
+    <div class="checkbox-div">
+      <mat-checkbox
+        class="filters-checkbox"
+        [checked]="checkboxStates[engine]"
+        (change)="onCheckToggle(engine)"
+      >
+        {{ engine }}
+      </mat-checkbox>
+    </div>
+
+    } @empty {
+    <p>No elements found to this filter</p>
+    }} @if (currentFilterName === "transmissions") { @for (transmission of
+    transmissions; track $index) {
+    <div class="checkbox-div">
+      <mat-checkbox
+        class="filters-checkbox"
+        [checked]="checkboxStates[transmission]"
+        (change)="onCheckToggle(transmission)"
+      >
+        {{ transmission }}
+      </mat-checkbox>
+    </div>
+
+    } @empty {
+    <p>No elements found to this filter</p>
+    } } @if (currentFilterName === "bodystyles") { @for (bodystyle of
+    bodystyles; track $index) {
+    <div class="checkbox-div">
+      <mat-checkbox
+        class="filters-checkbox"
+        [checked]="checkboxStates[bodystyle]"
+        (change)="onCheckToggle(bodystyle)"
+      >
+        {{ bodystyle }}
+      </mat-checkbox>
+    </div>
+
+    } @empty {
+    <p>No elements found to this filter or this filter is on development</p>
+    }}
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button matButton [mat-dialog-close]="">Cancel</button>
+  <button
+    matButton
+    [mat-dialog-close]="true"
+    cdkFocusInitial
+    (click)="confirmDialog()"
+  >
+    Confirm filters
+  </button>
+</mat-dialog-actions>

@@ -5,6 +5,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
 import { MatBadgeModule } from "@angular/material/badge";
 import { MatDividerModule } from "@angular/material/divider";
+import { CarCardComponent } from "../../components/car-card/car-card.component";
 
 @NgModule({
   declarations: [BasketComponent],
@@ -14,6 +15,7 @@ import { MatDividerModule } from "@angular/material/divider";
     MatBadgeModule,
     MatButtonModule,
     MatIconModule,
+    CarCardComponent
   ],
   exports: [BasketComponent],
 })
