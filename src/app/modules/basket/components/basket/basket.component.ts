@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-basket',
+  selector: "app-basket",
   standalone: false,
-  templateUrl: './basket.component.html',
-  styleUrl: './basket.component.scss'
+  templateUrl: "./basket.component.html",
+  styleUrl: "./basket.component.scss",
 })
 export class BasketComponent {
+  hidden = false;
 
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden;
+  }
 }

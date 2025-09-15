@@ -1,13 +1,33 @@
-@import "variables";
+@import "../style/variables.scss";
 
 main {
   width: 100%;
+  position: relative;
   min-height: 100%;
+  background-color: #ecf0f1;
 }
 
 header {
   display: flex;
+  position: relative;
+  height: $header-height;
+  background-color: #ecf0f1;
+  z-index: 999;
+}
+
+footer {
+  display: block;
+  position: relative;
   height: $header-height;
   background-color: $header-bg;
-  
+  z-index: 999;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px 0;
 }
